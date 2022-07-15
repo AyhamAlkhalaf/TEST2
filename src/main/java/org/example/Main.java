@@ -1,6 +1,8 @@
 package org.example;
 
 import java.util.Scanner;
+import java.util.InputMismatchException;
+import  java.util.ArrayList;
 
 public class Main {
 
@@ -124,11 +126,83 @@ public class Main {
 //        cd1.getItemPries();
 //        cd1.setTitle("");// يتعرف عليها لانها موجودة في الكلاس الاصلي
 //
-        RetailItem cd2 = new CD();
-        cd2.getItemPries();
+//        RetailItem cd2 = new CD();
+//        cd2.getItemPries();
 //        cd2.set //  لا يعرف اي ميثود غير موجودة في ال  retailItem الانتر فيس يعني
-        Displayable cd3 = new CD();
-        cd3.disPlay();
+//        Displayable cd3 = new CD();
+//        cd3.disPlay();
+
+
+
+        //enum
+//        Course c1 = Course.Math;
+//        Course c2 = Course.Database;
+//
+//        System.out.println(c1.toString());// تطبع النص
+//        System.out.println(c1.ordinal());// تطبع ترتيب ال ماث من 0 الى ...
+//        System.out.println(c1.compareTo(c2));// تقارن بين ال الاوبجكت اذا الاول اكبر يخرج ناتج موجب اذا سالب بلعكس اذا صفر متساوي
+//        System.out.println(c1.equals(c2));//  تطيع ترو او فولس يعني متساوي او لا
+
+        /*
+        try { // هاندل تقوم على حصر الاخطاء المتوقعة ومنع البرنامج من التوقف مع اظهار الخطأ
+            int x ;
+            int  y ;
+            Scanner s =new Scanner(System.in);
+            System.out.println("Enter  x ");
+            x = s.nextInt();
+            System.out.println("Enter  y ");
+            y = s.nextInt();
+
+            System.out.println(x/y);
+
+
+        }
+//        catch (ArithmeticException e){ // ايرور معروف يظهر عند القسمة على صفر
+//            System.out.println("Error , Division By Zero Noy Allowed ");
+//        }
+//        catch (InputMismatchException e){// ايرور يظهر عن اذخال نوع مختلف من البيانات المطلوبة
+//            System.out.println("Error , Please Enter Numeric Values ");
+//        }
+        catch (Exception e){ // يعمل كاتش ل اي نوع من الاكسبشن
+            System.out.println("Error " + e.getMessage());// يطبع الايرور
+        }
+
+
+        System.out.println("The program continues ");
+
+        */
+
+        ArrayList <String > list = new ArrayList<String>();//الاريه كلاس
+
+        list.add("ayham");
+        list.add("asmaa");
+        list.add("tya");
+
+        System.out.println(list.size());// عددها
+        System.out.println(list);// طباعتها
+        System.out.println(list.get(2));// طباعت الرقم 2 فقط
+
+        list.add(1,"ali"); // وضع اسم حديد في ال اندكس 1
+        System.out.println(list);
+
+        list.set(3 , "mayar");// استبدال
+        System.out.println(list);
+
+        list.remove(2);// حذف
+        System.out.println(list.size());
+        System.out.println(list);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
